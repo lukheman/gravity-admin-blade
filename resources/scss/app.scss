@@ -1,20 +1,18 @@
+// Custom Bootstrap Variables (Palet alam)
+$primary: #4a6741;
+$secondary: #8a6e3a;
+$success: #5a8a3a;
+$warning: #c8a050;
+$danger: #c05a3a;
+$info: #4a7a8a;
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// Custom Theme Variables
 :root {
     --sidebar-width: 280px;
     --topbar-height: 70px;
-
-    /* Bootstrap overrides — palet alam */
-    --bs-primary: #4a6741;
-    --bs-primary-rgb: 74, 103, 65;
-    --bs-secondary: #8a6e3a;
-    --bs-secondary-rgb: 138, 110, 58;
-    --bs-success: #5a8a3a;
-    --bs-success-rgb: 90, 138, 58;
-    --bs-warning: #c8a050;
-    --bs-warning-rgb: 200, 160, 80;
-    --bs-danger: #c05a3a;
-    --bs-danger-rgb: 192, 90, 58;
-    --bs-info: #4a7a8a;
-    --bs-info-rgb: 74, 122, 138;
 
     /* Light theme — pasir & daun kering */
     --bg-primary: #f5f0e8;

@@ -17,37 +17,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('assets/fontawesome-free-7.2.0-web/css/all.min.css')}}">
-
-    <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css')}}">
+    
+    @vite(['resources/scss/app.scss', 'resources/js/app.js'])
 
     <style>
-        :root {
-            --bs-primary: #6366f1;
-            --bs-primary: #4f46e5;
-            --primary-light: #818cf8;
-            --bs-secondary: #0ea5e9;
-            --bs-success: #10b981;
-            --bs-warning: #f59e0b;
-            --bs-danger: #ef4444;
-            --text-primary: #1e293b;
-            --text-secondary: #64748b;
-            --text-muted: #94a3b8;
-            --border-color: #e2e8f0;
-            --bg-light: #f8fafc;
-            --bg-white: #ffffff;
-        }
-
-        [data-theme="dark"] {
-            --bs-primary: #818cf8;
-            --bs-primary: #6366f1;
-            --primary-light: #a5b4fc;
-            --text-primary: #f1f5f9;
-            --text-secondary: #cbd5e1;
-            --text-muted: #94a3b8;
-            --border-color: #334155;
-            --bg-light: #0f172a;
-            --bg-white: #1e293b;
-        }
 
         * {
             margin: 0;
@@ -789,7 +762,7 @@
                     <i class="fas fa-moon" id="theme-icon"></i>
                 </button>
                 <a href="{{ route('login') }}" class="btn-nav btn-nav-outline">Sign In</a>
-                <a href="{{ route('register') }}" class="btn-nav btn-nav-primary">Get Started</a>
+                <a href="{{ url('/register') }}" class="btn-nav btn-nav-primary">Get Started</a>
                 <button class="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
                 </button>

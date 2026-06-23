@@ -34,7 +34,7 @@
 
     @if($actionLabel)
         <div class="mt-4">
-            <a href="{{ $actionHref ?? '#' }}" class="btn btn-modern btn-primary-modern">
+            <a href="{{ $actionHref ?? '#' }}" class="btn btn-primary">
                 <i class="{{ $actionIcon }} me-2"></i>{{ $actionLabel }}
             </a>
         </div>

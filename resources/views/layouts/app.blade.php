@@ -12,12 +12,10 @@
     <title>{{ $title }}</title>
 
     <link rel="stylesheet" href="{{ asset('assets/fontawesome-free-7.2.0-web/css/all.min.css')}}">
-
-    <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css')}}">
-
-    <link rel="stylesheet" href="{{ asset('assets/css/customize-theme.css')}}">
     <!-- Toastify CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
+    @vite(['resources/scss/app.scss', 'resources/js/app.js'])
 
     <style>
         * {
@@ -236,18 +234,6 @@
             border-radius: 8px;
             font-weight: 500;
             transition: all 0.2s;
-        }
-
-        .btn-primary-modern {
-            background: var(--bs-primary);
-            color: white;
-            border: none;
-        }
-
-        .btn-primary-modern:hover {
-            background: var(--bs-primary);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
         }
 
         .alert-modern {
