@@ -19,7 +19,6 @@
     <!-- Toastify CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
-    @livewireStyles
     <style>
         * {
             margin: 0;
@@ -613,39 +612,6 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script>
-        document.addEventListener('livewire:initialized', () => {
-            Livewire.on('toast', ({ message, variant, reload }) => {
-                if (reload) {
-                    sessionStorage.setItem('reload', 'true');
-                    sessionStorage.setItem('variant', variant);
-                    sessionStorage.setItem('message', message);
-                }
-
-                const borderColors = {
-                    success: "var(--bs-success)",
-                    warning: "var(--bs-warning)",
-                    error: "var(--bs-danger)",
-                    info: "var(--bs-info)"
-                };
-
-                Toastify({
-                    text: message,
-                    duration: 4000,
-                    close: false,
-                    gravity: "top",
-                    position: "right",
-                    stopOnFocus: true,
-                    style: {
-                        background: "var(--bg-secondary)",
-                        border: `2px solid ${borderColors[variant] || "var(--bs-secondary)"}`,
-                        color: "var(--text-primary)",
-                        borderRadius: "12px",
-                        boxShadow: "var(--card-shadow)"
-                    },
-                }).showToast();
-            });
-        });
-
         // Setelah halaman dimuat ulang, periksa apakah ada notifikasi yang harus ditampilkan
         window.addEventListener('load', function() {
             if (sessionStorage.getItem('reload') === 'true') {
@@ -682,7 +648,5 @@
             }
         });
     </script>
-
-    @livewireScripts
 </body>
 </html>
