@@ -1,10 +1,10 @@
-// Custom Bootstrap Variables (Palet alam)
-$primary: #4a6741;
-$secondary: #8a6e3a;
-$success: #5a8a3a;
-$warning: #c8a050;
-$danger: #c05a3a;
-$info: #4a7a8a;
+// Custom Bootstrap Variables (Soft Blue Theme)
+$primary: #3b82f6;
+$secondary: #64748b;
+$success: #10b981;
+$warning: #f59e0b;
+$danger: #ef4444;
+$info: #0ea5e9;
 
 // Import Bootstrap
 @import "bootstrap/scss/bootstrap";
@@ -14,31 +14,38 @@ $info: #4a7a8a;
     --sidebar-width: 280px;
     --topbar-height: 70px;
 
-    /* Light theme — pasir & daun kering */
-    --bg-primary: #f5f0e8;
-    --bg-secondary: #ede8d8;
-    --bg-tertiary: #f9f6ee;
-    --text-primary: #2d2a1e;
-    --text-secondary: #7a6e52;
-    --text-muted: #a09070;
-    --border-color: #c8b99a;
-    --border-light: #ddd4bc;
-    --input-bg: #f9f6ee;
-    --hover-bg: #ede8d8;
-    --card-shadow: 0 1px 3px rgba(74, 60, 30, 0.10), 0 1px 2px rgba(74, 60, 30, 0.14);
+    /* Light theme — Soft Blue / Slate */
+    --bg-primary: #f0f4f8;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #e1e8f0;
+    --text-primary: #1e293b;
+    --text-secondary: #475569;
+    --text-muted: #64748b;
+    --border-color: #cbd5e1;
+    --border-light: #e2e8f0;
+    --input-bg: #ffffff;
+    --hover-bg: #f8fafc;
+    --card-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.05), 0 2px 4px -1px rgba(15, 23, 42, 0.03);
 }
 
 [data-theme="dark"] {
-    /* Dark theme — hutan malam & tanah gelap */
-    --bg-primary: #1a1f14;
-    --bg-secondary: #252d1e;
-    --bg-tertiary: #2e3828;
-    --text-primary: #e8f0d8;
-    --text-secondary: #b0c49a;
-    --text-muted: #7a9060;
-    --border-color: #3a4830;
-    --border-light: #4a5a3a;
-    --input-bg: #252d1e;
-    --hover-bg: #2e3828;
-    --card-shadow: 0 1px 3px rgba(0,0,0,0.35), 0 1px 2px rgba(0,0,0,0.45);
+    /* Dark theme — Deep Blue / Slate */
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --bg-tertiary: #334155;
+    --text-primary: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+    --border-color: #334155;
+    --border-light: #475569;
+    --input-bg: #0f172a;
+    --hover-bg: #334155;
+    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+}
+
+/* Force button text to white */
+.btn-primary, .btn-success, .btn-danger, .btn-info {
+    --bs-btn-color: #ffffff;
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-active-color: #ffffff;
 }
